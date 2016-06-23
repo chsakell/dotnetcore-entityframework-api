@@ -33,6 +33,7 @@ Frameworks - Packages - Patterns - Features used
 <li>Clone or download the repository</li>
 
 <li>Open a terminal/cmd</li>
+<li>Open <i>Schduler.API</i> folder in your favorite text editor (preferably VS Code). If you get a message <i>Required assets to build and debug are missing from your project. Add them?</i>, click Yes</li>
 <li>Navigate to Schduler.Model and run <b>dotnet restore</b></li>
 <li>Navigate to Schduler.Data and run <b>dotnet restore</b></li>
 <li>Navigate to Scheduler.API and run <b>dotnet restore</b></li>
@@ -42,6 +43,5 @@ Frameworks - Packages - Patterns - Features used
 <li><b>dotnet ef database update</b></li>
 </ol>
 </li>
-<li>Open <i>Schduler.API</i> folder in your favorite text editor (preferably VS Code)</li>
 <li>While at Scheduler.API run <b>dotnet run</b></li>
 </ol>
