@@ -1,4 +1,5 @@
 # Building REST APIs using ASP.NET Core and Entity Framework Core
+<a href="http://wp.me/p3mRWu-18G" taget="_blank">Blog post</a><br/>
 Frameworks - Packages - Patterns - Features used
 <ul>
 <li>ASP.NET Core</li>
@@ -9,7 +10,7 @@ Frameworks - Packages - Patterns - Features used
 <li>Global exception handler</li>
 <li>Cors</li>
 </ul>
-
+<a href="http://wp.me/p3mRWu-18G" target="_blank"><img src="https://chsakell.files.wordpress.com/2016/06/dotnet-core-api-14.png?w=700" alt="dotnet-core-api-14" class="alignnone size-full wp-image-4397"></a>
 <h3>Installation Instructions (1)</h3>
 <ul>
 <li>Install <a href="https://www.microsoft.com/net/core" target="_blank">.NET Core</a></li>
