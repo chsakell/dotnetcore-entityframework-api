@@ -21,6 +21,7 @@ Frameworks - Packages - Patterns - Features used
 <ol>
 <li>Open the solution in VS 2015</li>
 <li>Open Package Manager Console and navigate to Scheduler.API by typing cd <i>path_to_Scheduler.API</i></li>
+<li>Modify the connection string in <i>appsettings.json</i> to reflect your database environment</li>
 <li>run the following commands
 <ol>
 <li><b>dotnet ef migrations add "initial"</b></li>
@@ -39,6 +40,7 @@ Frameworks - Packages - Patterns - Features used
 <li>Navigate to Scheduler.Model and run <b>dotnet restore</b></li>
 <li>Navigate to Scheduler.Data and run <b>dotnet restore</b></li>
 <li>Navigate to Scheduler.API and run <b>dotnet restore</b></li>
+<li>Modify the connection string in <i>appsettings.json</i> to reflect your database environment</li>
 <li>While at Scheduler.API run the following commands
 <ol>
 <li><b>dotnet ef migrations add "initial"</b></li>
