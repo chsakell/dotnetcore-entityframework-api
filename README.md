@@ -5,6 +5,7 @@ Frameworks - Packages - Patterns - Features used
 <li>ASP.NET Core</li>
 <li>Entity Framework Core</li>
 <li>Entity Framework Migrations - Code First</li>
+<li>Repository pattern</li>
 <li>FluentValidation</li>
 <li>Automapper</li>
 <li>Global exception handler</li>
@@ -19,7 +20,7 @@ Frameworks - Packages - Patterns - Features used
 <h3>Installation Instructions (2) - Visual Studio</h3>
 <ol>
 <li>Open the solution in VS 2015</li>
-<li>Open Package Manager Console and navigate to Schduler.API by typing cd <i>path_to_Schduler.API</i></li>
+<li>Open Package Manager Console and navigate to Scheduler.API by typing cd <i>path_to_Scheduler.API</i></li>
 <li>run the following commands
 <ol>
 <li><b>dotnet ef migrations add "initial"</b></li>
@@ -35,8 +36,8 @@ Frameworks - Packages - Patterns - Features used
 
 <li>Open a terminal/cmd</li>
 <li>Open <i>Schduler.API</i> folder in your favorite text editor (preferably VS Code). If you get a message <i>Required assets to build and debug are missing from your project. Add them?</i>, click Yes</li>
-<li>Navigate to Schduler.Model and run <b>dotnet restore</b></li>
-<li>Navigate to Schduler.Data and run <b>dotnet restore</b></li>
+<li>Navigate to Scheduler.Model and run <b>dotnet restore</b></li>
+<li>Navigate to Scheduler.Data and run <b>dotnet restore</b></li>
 <li>Navigate to Scheduler.API and run <b>dotnet restore</b></li>
 <li>While at Scheduler.API run the following commands
 <ol>
