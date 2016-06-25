@@ -25,7 +25,7 @@ namespace Scheduler.Data
 
 
             modelBuilder.Entity<Schedule>()
-                .ToTable("Scedule");
+                .ToTable("Schedule");
 
             modelBuilder.Entity<Schedule>()
                 .Property(s => s.CreatorId)
