@@ -50,7 +50,7 @@ Frameworks - Packages - Patterns - Features used
 <li>While at Scheduler.API run <b>dotnet run</b></li>
 </ol>
 
-> This project is used as the backend API in <a href="http://wp.me/p3mRWu-199" target="_blank">this</a> Angular 2 - TypeScript SPA
+> This project is used as the backend API in <a href="https://github.com/chsakell/angular2-features" target="_blank">this</a> Angular 2 - TypeScript SPA
 
 <h3 style="font-weight:normal;">Follow chsakell's Blog</h3>
 <table id="gradient-style" style="box-shadow:3px -2px 10px #1F394C;font-size:12px;margin:15px;width:290px;text-align:left;border-collapse:collapse;" summary="">
