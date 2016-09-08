@@ -52,6 +52,22 @@ Frameworks - Packages - Patterns - Features used
 
 > This project is used as the backend API in <a href="https://github.com/chsakell/angular2-features" target="_blank">this</a> Angular 2 - TypeScript SPA
 
+<h2>Donations</h2>
+For being part of open source projects and documenting my work here and on <a href="https://chsakell.com">chsakell's blog</a> I really do not charge anything. I try to avoid any type of ads also.
+
+If you think that any information you obtained here is worth of some money and are willing to pay for it, feel free to send any amount through paypal.
+
+<table>
+<tr><th>Paypal</th></tr>
+<tbody>
+<tr>
+<td><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=chsakell%40gmail%2ecom&lc=US&item_name=Donation%20for%20chsakell%27s%20blog&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" style="text-align:center;display:block">
+<img src="https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_cc_147x47.png" alt="Buy me a beer" />
+</a></td>
+</tr>
+</tbody>
+</table>
+
 <h3 style="font-weight:normal;">Follow chsakell's Blog</h3>
 <table id="gradient-style" style="box-shadow:3px -2px 10px #1F394C;font-size:12px;margin:15px;width:290px;text-align:left;border-collapse:collapse;" summary="">
 <thead>
