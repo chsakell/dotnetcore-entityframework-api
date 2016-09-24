@@ -40,6 +40,7 @@ Frameworks - Packages - Patterns - Features used
 <li>Navigate to Scheduler.Model and run <b>dotnet restore</b></li>
 <li>Navigate to Scheduler.Data and run <b>dotnet restore</b></li>
 <li>Navigate to Scheduler.API and run <b>dotnet restore</b></li>
+<li>If you haven't SQL Server <i>(Linux or MAC)</i> set "InMemoryProvider": <b>true</b> in the <i>appsettings.json</i> file and skip to the last step</li>
 <li>Modify the connection string in <i>appsettings.json</i> to reflect your database environment</li>
 <li>While at Scheduler.API run the following commands
 <ol>
