@@ -51,7 +51,7 @@ namespace Scheduler.API
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {   
-            string sqlConnectionString = Configuration["Data:SchedulerConnection:ConnectionString"];
+            string sqlConnectionString = Configuration["ConnectionStrings:DefaultConnection"];
             bool useInMemoryProvider = bool.Parse(Configuration["Data:SchedulerConnection:InMemoryProvider"]);
             
             services.AddDbContext<SchedulerContext>(options => {
@@ -61,7 +61,7 @@ namespace Scheduler.API
                         options.UseInMemoryDatabase();
                         break;
                     default:
-                        options.UseSqlServer(Configuration["Data:SchedulerConnection:ConnectionString"],
+                        options.UseSqlServer(sqlConnectionString,
                     b => b.MigrationsAssembly("Scheduler.API"));
                     break;
                 }
