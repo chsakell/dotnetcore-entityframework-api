@@ -24,18 +24,19 @@ namespace Scheduler.API
     public class Startup
     {
         private static string _applicationPath = string.Empty;
-        private static string _contentRootPath = string.Empty;
-        public IConfigurationRoot Configuration { get; set; }
+        string sqlConnectionString = string.Empty;
+        bool useInMemoryProvider = false;
+        public IConfigurationRoot Configuration { get; }
         public Startup(IHostingEnvironment env)
         {
             _applicationPath = env.WebRootPath;
-            _contentRootPath = env.ContentRootPath;
             // Setup configuration sources.
 
             var builder = new ConfigurationBuilder()
-                .SetBasePath(_contentRootPath)
-                .AddJsonFile("appsettings.json")
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
 
             if (env.IsDevelopment())
             {
@@ -44,16 +45,19 @@ namespace Scheduler.API
                 builder.AddUserSecrets();
             }
 
-            builder.AddEnvironmentVariables();
             Configuration = builder.Build();
         }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
-        {   
-            string sqlConnectionString = Configuration["ConnectionStrings:DefaultConnection"];
-            bool useInMemoryProvider = bool.Parse(Configuration["Data:SchedulerConnection:InMemoryProvider"]);
-            
+        {
+            string sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
+            try
+            {
+                useInMemoryProvider = bool.Parse(Configuration["AppSettings:InMemoryProvider"]);
+            }
+            catch { }
+
             services.AddDbContext<SchedulerContext>(options => {
                 switch (useInMemoryProvider)
                 {
