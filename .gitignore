@@ -246,3 +246,4 @@ ModelManifest.xml
 
 # Migrations folder
 Scheduler.API/Migrations
+/Scheduler.API/Properties/PublishProfiles
