@@ -52,7 +52,8 @@ Frameworks - Packages - Patterns - Features used
 </ol>
 
 > This project is used as the backend API in <a href="https://github.com/chsakell/angular2-features" target="_blank">this</a> Angular 2 - TypeScript SPA
-
+<h2>Microsoft Azure Deployment</h2>
+Learn how to deploy an ASP.NET Core app on Microsoft Azure <a href="http://wp.me/p3mRWu-1bi" target="_blank">here</a>.
 <h2>Donations</h2>
 For being part of open source projects and documenting my work here and on <a href="https://chsakell.com">chsakell's blog</a> I really do not charge anything. I try to avoid any type of ads also.
 
