@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Scheduler.API.Core
+﻿namespace Scheduler.API.Core
 {
     public class PaginationHeader
     {
