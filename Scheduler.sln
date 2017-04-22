@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Scheduler.Model", "Scheduler.Model\Scheduler.Model.xproj", "{6B8A8A76-7D33-4F3A-B012-908D46DACF8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Model", "Scheduler.Model\Scheduler.Model.csproj", "{6B8A8A76-7D33-4F3A-B012-908D46DACF8E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Scheduler.Data", "Scheduler.Data\Scheduler.Data.xproj", "{83AA2666-2D40-41A1-9B1E-BE334156B48B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Data", "Scheduler.Data\Scheduler.Data.csproj", "{83AA2666-2D40-41A1-9B1E-BE334156B48B}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Scheduler.API", "Scheduler.API\Scheduler.API.xproj", "{004F996F-3F86-4203-AC9A-91DADEA654A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.API", "Scheduler.API\Scheduler.API.csproj", "{004F996F-3F86-4203-AC9A-91DADEA654A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
