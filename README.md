@@ -19,7 +19,7 @@ Frameworks - Packages - Patterns - Features used
 
 <h3>Installation Instructions (2) - Visual Studio</h3>
 <ol>
-<li>Open the solution in VS 2015</li>
+<li>Open the solution in VS 2017</li>
 <li>Open Package Manager Console and navigate to Scheduler.API by typing cd <i>path_to_Scheduler.API</i></li>
 <li>Modify the connection string in <i>appsettings.json</i> to reflect your database environment</li>
 <li>run the following commands
