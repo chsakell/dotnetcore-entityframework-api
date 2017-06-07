@@ -1,4 +1,6 @@
 # Building REST APIs using ASP.NET Core and Entity Framework Core
+[![Build status](https://ci.appveyor.com/api/projects/status/github/chsakell/dotnetcore-entityframework-api?branch=master&svg=true)](https://ci.appveyor.com/project/chsakell/dotnetcore-entityframework-api/branch/master)
+
 <a href="http://wp.me/p3mRWu-18G" taget="_blank">Blog post</a><br/>
 Frameworks - Packages - Patterns - Features used
 <ul>
