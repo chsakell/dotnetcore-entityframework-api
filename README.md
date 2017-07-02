@@ -26,8 +26,8 @@ Frameworks - Packages - Patterns - Features used
 <li>Modify the connection string in <i>appsettings.json</i> to reflect your database environment</li>
 <li>run the following commands
 <ol>
-<li><b>dotnet ef migrations add "initial"</b></li>
-<li><b>dotnet ef database update</b></li>
+<li><b>Add-Migration Initial</b></li>
+<li><b>Update-Database</b></li>
 </ol>
 </li>
 <li>Build and run the Scheduler.API project</li>
@@ -46,8 +46,8 @@ Frameworks - Packages - Patterns - Features used
 <li>Modify the connection string in <i>appsettings.json</i> to reflect your database environment</li>
 <li>While at Scheduler.API run the following commands
 <ol>
-<li><b>dotnet ef migrations add "initial"</b></li>
-<li><b>dotnet ef database update</b></li>
+<li><b>Add-Migration Initial</b></li>
+<li><b>Update-Database</b></li>
 </ol>
 </li>
 <li>While at Scheduler.API run <b>dotnet run</b></li>
