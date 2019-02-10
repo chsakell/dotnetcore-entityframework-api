@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Scheduler.Data
 {
@@ -11,12 +12,14 @@ namespace Scheduler.Data
         private static SchedulerContext context;
         public static void Initialize(IServiceProvider serviceProvider)
         {
-            context = (SchedulerContext)serviceProvider.GetService(typeof(SchedulerContext));
-
-            InitializeSchedules();
+            using (var serviceScope = serviceProvider.CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetService<SchedulerContext>();
+                InitializeSchedules(context);
+            }
         }
 
-        private static void InitializeSchedules()
+        private static void InitializeSchedules(SchedulerContext context)
         {
             if(!context.Users.Any())
             {

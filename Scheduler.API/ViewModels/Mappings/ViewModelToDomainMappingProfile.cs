@@ -6,13 +6,13 @@ namespace Scheduler.API.ViewModels.Mappings
 {
     public class ViewModelToDomainMappingProfile : Profile
     {
-        protected override void Configure()
+        public ViewModelToDomainMappingProfile()
         {
-            Mapper.CreateMap<ScheduleViewModel, Schedule>()
-               .ForMember(s => s.Creator, map => map.UseValue(null))
-               .ForMember(s => s.Attendees, map => map.UseValue(new List<Attendee>()));
+            CreateMap<ScheduleViewModel, Schedule>()
+                .ForMember(s => s.Creator, map => map.MapFrom(src => default(User)))
+                .ForMember(s => s.Attendees, map => map.MapFrom(src => new List<Attendee>()));
 
-            Mapper.CreateMap<UserViewModel, User>();
+            CreateMap<UserViewModel, User>();
         }
     }
 }

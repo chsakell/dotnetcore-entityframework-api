@@ -15,9 +15,9 @@ namespace Scheduler.API.Controllers
     [Route("api/[controller]")]
     public class UsersController : Controller
     {
-        private IUserRepository _userRepository;
-        private IScheduleRepository _scheduleRepository;
-        private IAttendeeRepository _attendeeRepository;
+        private readonly IUserRepository _userRepository;
+        private readonly IScheduleRepository _scheduleRepository;
+        private readonly IAttendeeRepository _attendeeRepository;
 
         int page = 1;
         int pageSize = 10;
